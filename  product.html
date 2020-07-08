@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motormat</title>
+    <link rel="stylesheet" href="libs/simplebar/simplebar.css">
+    <link rel="stylesheet" href="libs/rateyo/jquery.rateyo.min.css">
+    <link rel="stylesheet" href="libs/slick-carusel/slick.css">
+    <link rel="stylesheet" href="libs/jq-form-styler/jquery.formstyler.css">
+    <link rel="stylesheet" href="libs/jq-form-styler/jquery.formstyler.theme.css">
+    <link rel="stylesheet" href="css/style.min.css">
+
+
+    
+</head>
+<body>
+    <header class="header">
+        <div class="header__menu">
+            <div class="header__menu-inner">
+                <div class="header__menu-btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <a href="#" class="header__menu-text">
+                    Главное меню
+                </a>
+            </div>
+            <a href="#" class="header__logo">
+                <img src="images/logo.png" alt="">
+            </a>
+        </div>
+        <div class="header__info">
+            <a href="tel:+380501444088" class="header__info-phone">+38 (050) 1-444-088</a>
+            <a href="tel:+380671444088" class="header__info-phone">+38 (067) 1-444-088</a>
+            <div class="header__info-search">
+                <input type="text" placeholder="Поиск по марке, модели, описанию, # VIN или # лота">
+                <button class="search-text">поиск</button>
+                <button class="search-icon"><img src="images/search-icon.png" alt=""></button>
+            </div>
+            
+        </div>
+        <div class="header-adaptive">
+            <button  class="navigation__menu-btn navigation__menu-favorites">
+                <img src="images/favorites.svg" alt="">
+            </button>
+            <button class="navigation__menu-btn navigation__menu-comparison">
+                <img src="images/comparison.svg" alt="">
+            </button>
+            <button class="navigation__user">
+                <img src="images/user.svg" alt="">
+            </button>
+        </div>
+    </header>
+    <div class="main-container">
+        <section class="navigation">
+            <div class="navigation__inner">
+                <button class="navigation__user">
+                    <img src="images/user.svg" alt="">
+                </button>
+                <div class="navigation__user-text">
+                    Приветствуем тебя,<span>ГОСТЬ</span>
+                </div>
+                <div class="navigation__menu">
+                    <button class="navigation__menu-btn navigation__menu-carsearch" style="background-image: url(images/car-search.svg);"></button>
+                    <button class="navigation__menu-search">поиск АВТО</button>
+                </div>
+                <button  class="navigation__menu-btn navigation__menu-favorites">
+                    <img src="images/favorites.svg" alt="">
+                </button>
+                <button class="navigation__menu-btn navigation__menu-comparison">
+                    <img src="images/comparison.svg" alt="">
+                </button>
+                <div class="navigation__links">
+                    <div class="navigation__links-inner">
+                        <img src="images/telegram.svg" alt="">
+                    </div>
+                </div>
+                <div class="navigation__consultant-inner">
+                    <div class="navigation__consultant" style="background-image: url(images/consultant.jpg);"></div>
+                    <div class="navigation__consultant-text">
+                        персональный консультант
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="product">
+            <div class="container">
+                <div class="product__wrapper">
+                    <div class="product__inner">
+                        <div class="product__information">
+                            <div class="product__information-inner">
+                                <div class="product__information-name">
+                                    Volkswagen
+                                    Jetta Base 2014
+                                </div>
+                                <div class="product__information-price">
+                                    <a href="#" class="product__price">9 100 $</a>
+                                    <div class="product__price-credit">
+                                        покупка в кредит на 12 мес
+                                        платеж – <span>216 $/мес</span>
+                                    </div>
+                                </div>
+                                <div class="product__information-border">
+                                    <div class="product-status__inner">  
+                                        <div class="product-status__column">
+                                            <div class="product-status__status product-status">статус:</div>
+                                            <div class="product-status__playground product-status">площадка:</div>
+                                            <div class="product-status__state product-status">состояние:</div>
+                                        </div>
+                                        <div class="product-status__column">
+                                            <div class="product-instatus">В наличии </div>
+                                            <div class="product-instatus">г. Днепр, пр. Героев, 2</div>
+                                            <div class="product-instatus">Восстановлен</div>
+                                        </div>
+                                        <div class="product-status__column">
+                                            <a href="#" class="product-status__map">
+                                                <img src="images/map-marker.png" alt="">
+                                                <span>смотреть на карте</span>
+                                            </a>
+                                        </div>
+                                    </div> 
+                                    <div class="product__information-about">
+                                        Авто в идеальном состоянии. Нет никаких видимых или скрытых недостатков и неисправностей. Для вашей гарантии, возможна проверка на любом специализированном СТО города. 
+                                    </div>
+                                    <div class="product__information-rate">
+                                        <div class="rate-star"></div>
+                                         <span>4.0</span>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+                        <div class="product__inner-nav">
+                            <div class="breadcrumbs">карточка лота</div>
+                            <div class="product-nav"></div>
+                        </div>
+                    </div> 
+                    <div class="product__main" data-simplebar>
+                        <div class="product__characteristic">
+                            <div class="product__characteristic-wrapper">
+                                <div class="product__characteristic-inner">
+                                    <div class="product__tabs">
+                                        <div class="tabs">
+                                            <span class="tab" data-id="1">все</span>
+                                            <span class="tab active" data-id="2">фото</span>
+                                            <span class="tab" data-id="3">особенности</span>
+                                            <span class="tab" data-id="4">видео</span>
+                                            <span class="tab" data-id="5">360º</span>
+                                        </div>
+                                        <div class="tab_content">
+                                            <div class="tab-item" id="1">
+                                                
+                                            </div>
+                                            <div class="tab-item active-tab" id="2">
+                                                <div class="tab-item__slider">
+                                                    <div class="tab__slider">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                    </div>
+                                                    <div class="tab__slider-nav">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                        <img src="images/vw-jetta.jpg" alt="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-item" id="3"></div>
+                                            <div class="tab-item" id="4"></div>
+                                            <div class="tab-item" id="5"></div>
+                                        </div>
+                                    </div>
+                                    <div class="product__characteristic-info">
+                                        <div class="product__characteristic-info__title sup-title">
+                                            характеристики
+                                        </div>
+                                        <div class="product__characteristic-info__inner">
+                                            <div class="product__characteristic-info__column">
+                                                <div class="product__characteristic-info__row about">Год выпуска:</div>
+                                                <div class="product__characteristic-info__row about">VIN-номер:</div>
+                                                <div class="product__characteristic-info__row about">Пробег:</div>
+                                                <div class="product__characteristic-info__row about">Тип двигателя:</div>
+                                                <div class="product__characteristic-info__row about">Объем двигателя:</div>
+                                                <div class="product__characteristic-info__row about">Цвет:</div>
+                                                <div class="product__characteristic-info__row about">Привод:</div>
+                                                <div class="product__characteristic-info__row about">КПП:</div>
+                                            </div>
+                                            <div class="product__characteristic-info__column">
+                                                <div class="product__characteristic-info__row description">2014 год</div>
+                                                <div class="product__characteristic-info__row description vin-number">
+                                                    3VW2K7AJ8EM234942
+                                                    <a href="#" class="vin-search">
+                                                        <img src="images/search-icon.svg" alt="">
+                                                    </a>
+                                                </div>
+                                                <div class="product__characteristic-info__row description">133 тыс. км</div>
+                                                <div class="product__characteristic-info__row description">Бензин</div>
+                                                <div class="product__characteristic-info__row description">2.0 л</div>
+                                                <div class="product__characteristic-info__row description">Белый</div>
+                                                <div class="product__characteristic-info__row description">Передний</div>
+                                                <div class="product__characteristic-info__row description">Автомат</div>
+                                            </div>
+                                            
+                                        </div>
+                                        <a href="#" class="product__characteristic-info__btn">история авто</a>
+                                        <button class="btn-favorites">        
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 22.02 19.97"><defs><style>.cls-1{fill:#5b5b5f;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="ВАРИАНТ_4_гибрид_" data-name="ВАРИАНТ 4 (гибрид)"><g id="ГЛАВНАЯ_СТРАНИЦА_копия_" data-name="ГЛАВНАЯ СТРАНИЦА (копия)"><g id="фон_копия_" data-name="фон (копия)"><g id="левая_панель" data-name="левая панель"><path class="cls-1" d="M15.6,0a6.41,6.41,0,0,0-2.92.7A6.74,6.74,0,0,0,11,1.93,6.93,6.93,0,0,0,9.34.7,6.42,6.42,0,0,0,0,6.42c0,2.5,1.32,5.17,3.93,7.91a38.36,38.36,0,0,0,6.71,5.4L11,20l.37-.24a38.34,38.34,0,0,0,6.7-5.4C20.69,11.59,22,8.92,22,6.42A6.43,6.43,0,0,0,15.6,0Z"/></g></g></g></g></g></svg>
+                                            <span>Добавлено в избранное</span>
+                                        </button>
+                                        <button class="btn-comparison">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 24.96"><defs><style>.cls-1{fill:#5b5b5f;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="ВАРИАНТ_4_гибрид_" data-name="ВАРИАНТ 4 (гибрид)"><g id="ГЛАВНАЯ_СТРАНИЦА_копия_" data-name="ГЛАВНАЯ СТРАНИЦА (копия)"><g id="фон_копия_" data-name="фон (копия)"><g id="левая_панель" data-name="левая панель"><path class="cls-1" d="M7,.08H4.79A4.8,4.8,0,0,0,0,4.87v18A2,2,0,0,0,2.05,25H9.71a2,2,0,0,0,2-2.05v-18A4.8,4.8,0,0,0,7,.08ZM4.34.93A4.09,4.09,0,0,1,.85,4.42,4,4,0,0,1,4.34.93ZM.82,11.65a4.92,4.92,0,0,1,.46-2.1l1.08,1.54a1.17,1.17,0,0,0-.17.61v6a1.14,1.14,0,0,0,.12.52L1.05,20a1.32,1.32,0,0,1-.23-.73ZM3.42,19H8.34a1.18,1.18,0,0,0,.53-.12L10,20.49a1.13,1.13,0,0,1-.32.05H2.05a1.13,1.13,0,0,1-.32-.05l1.16-1.66a1.18,1.18,0,0,0,.53.12Zm5.36-8.4a1.32,1.32,0,0,0-.44-.08H3.42a1.27,1.27,0,0,0-.44.08L1.73,8.76a5.05,5.05,0,0,1,8.3,0Zm2.16,8.75a1.2,1.2,0,0,1-.24.72L9.45,18.24a1.14,1.14,0,0,0,.12-.52v-6a1.17,1.17,0,0,0-.17-.61l1.08-1.54a5.08,5.08,0,0,1,.46,2.1ZM7.59,1a4,4,0,0,1,3.32,3.44A4.11,4.11,0,0,1,7.59,1ZM23.21.08H21a4.8,4.8,0,0,0-4.79,4.79v18A2,2,0,0,0,18.29,25H26A2,2,0,0,0,28,22.91v-18A4.8,4.8,0,0,0,23.21.08Zm3.94,4.31A4.12,4.12,0,0,1,23.83,1a4,4,0,0,1,3.32,3.44ZM20.58.93a4.09,4.09,0,0,1-3.49,3.49A4,4,0,0,1,20.58.93ZM17.06,11.65a5.08,5.08,0,0,1,.46-2.1l1.08,1.54a1.17,1.17,0,0,0-.17.61v6a1.14,1.14,0,0,0,.12.52L17.3,20a1.25,1.25,0,0,1-.24-.73Zm2.6,7.3h4.92a1.18,1.18,0,0,0,.53-.12l1.16,1.66a1.13,1.13,0,0,1-.32.05H18.29a1.13,1.13,0,0,1-.32-.05l1.16-1.66a1.21,1.21,0,0,0,.53.12ZM25,10.55a1.27,1.27,0,0,0-.44-.08H19.66a1.22,1.22,0,0,0-.43.08L18,8.76a5.05,5.05,0,0,1,8.3,0Zm2.16,8.75A1.26,1.26,0,0,1,27,20l-1.26-1.78a1.14,1.14,0,0,0,.12-.52v-6a1.17,1.17,0,0,0-.17-.61l1.08-1.54a4.92,4.92,0,0,1,.46,2.1ZM13.62,0h.82V24.72h-.82Zm-12,22.5h.82v.82H1.61Zm7.71,0h.82v.82H9.32Zm8.65,0h.82v.82H18Zm7.71,0h.82v.82h-.82Z"/></g></g></g></g></g></svg>
+                                            <span>Добавить к сравнению</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="product__equipment">
+                                    <div class="product__equipment-title title">
+                                        комплектация
+                                    </div>
+                                    <div class="product__equipment-inner">
+                                        <div class="product__equipment-checkbox">
+                                            <div class="product__equipment-row">
+                                                <input type="checkbox" id="control">
+                                                <label for="control">Климат-контроль</label>                                                
+                                            </div>
+                                            <div class="product__equipment-row">
+                                                <input type="checkbox" id="signaling">
+                                                <label for="signaling">Сигнализация</label>
+                                            </div>
+                                            <div class="product__equipment-row">
+                                                <input type="checkbox" id="power-steering">
+                                                <label for="power-steering">Гидроусилитель руля</label>
+                                            </div>
+                                            <div class="product__equipment-row">
+                                                <input type="checkbox" id="tinting">
+                                                <label for="tinting">Тонировка</label>
+                                            </div>
+                                            <div class="product__equipment-row">
+                                                <input type="checkbox" id="car-radio">
+                                                <label for="car-radio">Автомагнитола</label>
+                                            </div>
+                                            <div class="product__equipment-row">
+                                                <input type="checkbox" id="locking">
+                                                <label for="locking">Центральный замок</label>
+                                            </div>
+                                            <div class="product__equipment-row">
+                                                <input type="checkbox" id="leather-interior">
+                                                <label for="leather-interior">Кожаный салон</label>
+                                            </div>
+                                            <div class="product__equipment-row">
+                                                <input type="checkbox" id="electric-mirrors">
+                                                <label for="electric-mirrors">Электрозеркала</label>
+                                            </div>
+                                    
+                                            <div class="product__equipment-row">
+                                                <input type="checkbox" id="power-windows">
+                                                <label for="power-windows">Стеклоподъемники </label>
+                                            </div>
+                                            <div class="product__equipment-row">
+                                                <input type="checkbox" id="wheels">
+                                                <label for="wheels">Легкосплавные диски</label>
+                                            </div>
+                                            <div class="product__equipment-row">
+                                                <input type="checkbox" id="heated-seats">
+                                                <label for="heated-seats">Подогрев сидений</label>
+                                            </div>
+                                            <div class="product__equipment-row">
+                                                <input type="checkbox" id="cruise-control">
+                                                <label for="cruise-control">Круиз контроль</label>
+                                            </div>
+                                        </div>
+                                        <div class="product__equipment-drive">
+                                            <div class="product__equipment-drive__title">
+                                                самое время
+                                            </div>
+                                            <a href="#" class="product__equipment-drive__link">
+                                                заказать тест-драйв
+                                            </a>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>
+                            <img class="logo-characteristic" src="images/logo-characteristic.svg" alt="">
+                        </div>
+                        <div class="finance">
+                           <div class="wrapper">
+                            <div class="finance__head">
+                                    <div class="finance__title sup-title">
+                                        финансовые программы
+                                    </div> 
+                                    <div class="finance-img">
+                                        <img src="images/finance-calculator.png" alt="">
+                                    </div>     
+                                </div>           
+                                <div class="finance__inner">
+                                    <div class="finance__tabs">
+                                        <div class="tabs">
+                                            <div class="js-tab-trigger active" data-tab="1"><span>01</span> кредит</div>
+                                            <div class="js-tab-trigger" data-tab="2"><span>02</span>лизинг</div>
+                                            <div class="js-tab-trigger" data-tab="3"><span>03</span>trade-in</div>
+                                        </div>
+                                        <div class="tab_content">
+                                            <div class="js-tab-content active" data-tab="1">
+                                                <div class="finance-tab__wrapper">
+                                                    <div class="finance-tab__content">
+                                                        <div class="finance-tab__title title">
+                                                            Покупка авто в кредит
+                                                        </div>
+                                                        <div class="finance-tab__text">
+                                                            Кредитование распространяется на все  автомобили, из США, которые находятся  в наличии в Украине, растаможены и  полностью готовы к эксплуатации.
+                                                        </div>
+                                                        <div class="finance-tab__list">
+                                                            Преимущества кредитной программы:
+                                                        </div>
+                                                        <ul class="finance-tab__items">
+                                                            <li>Всего 19% годовых на кредит в гривне!</li>
+                                                            <li>Авто не выступает в роли залога. Ваш автомобиль не может быть отчужден в течение года.</li>
+                                                            <li>Нет обязательного оформления КАСКО и страхования жизни.</li>
+                                                            <li>Отсутствие залоговых требований.</li>
+                                                            <li>Автомобиль является только вашим!</li>
+                                                            <li>Кредит или лизинг - существенная экономия во время покупки машины</li>
+                                                        </ul>
+                                                        <div class="finance-tab__about">
+                                                            <p>
+                                                                Даже учитывая то, что вам придется переплатить некоторую сумму, 
+                                                                согласно кредитной программе, все равно итоговая стоимость
+                                                                автомашины намного меньше, чем сумма покупки автомобиля в 
+                                                                кредит на рынке Украины. Большинство банков предлагают кредиты 
+                                                                на покупку уже использовавшихся ранее автомашин, которые в итоге 
+                                                                выходят их новым хозяевам намного дороже рыночной цены.
+                                                            </p>
+                                                            <p>
+                                                                К примеру, с помощью «Motormart» Honda Accord 2013 года обойдется 
+                                                                вам в $14 500 с учетом процентов по кредиту, тогда как в Украине
+                                                                подобный автомобиль стоит от $21 000. Такие цены – средние по рынку. 
+                                                                И это еще без учета процентов по кредиту!
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="finance-tab__calculator">
+                                                        <div class="finance-calculator__inner">
+                                                            <div class="finance-calculator__title">
+                                                                КАЛЬКУЛЯТОР кредитования
+                                                            </div>
+                                                            <div class="finance-calculator__tab">
+                                                                <div class="tabs">
+                                                                    <span class="calculator-tab active" data-tab="1">легковые авто</span>
+                                                                    <span class="calculator-tab" data-tab="2">грузовые авто</span>
+                                                                    <span class="calculator-tab" data-tab="3">мото транспорт</span>
+                                                                </div>
+                                                                <div class="tab_content">
+                                                                    <div class="calculator-tab-item active" data-tab="1">
+                                                                        <div class="finance-calculator__box">
+                                                                            <div class="finance-calculator-column">
+                                                                                <div class="finance-calculator-row">стоимость авто, $:</div>
+                                                                                <div class="finance-calculator-row">первоначальный взнос, $:</div>
+                                                                                <div class="finance-calculator-row">срок кредитования:</div>
+                                                                            </div>
+                                                                            <div class="finance-calculator-column">
+                                                                                <input type="number" placeholder="9 100 $">
+                                                                                <input type="number" placeholder="5 050 $">
+                                                                                <input type="text" placeholder="12 месяцев">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="calculator-tab-item" data-tab="2">
+                                                                        <div class="finance-calculator__box">
+                                                                            <div class="finance-calculator-column">
+                                                                                <div class="finance-calculator-row">стоимость авто, $:</div>
+                                                                                <div class="finance-calculator-row">первоначальный взнос, $:</div>
+                                                                                <div class="finance-calculator-row">срок кредитования:</div>
+                                                                            </div>
+                                                                            <div class="finance-calculator-column">
+                                                                                <input type="number" placeholder="9 100 $">
+                                                                                <input type="number" placeholder="5 050 $">
+                                                                                <input type="text" placeholder="12 месяцев">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="calculator-tab-item" data-tab="3">
+                                                                        <div class="finance-calculator__box">
+                                                                            <div class="finance-calculator-column">
+                                                                                <div class="finance-calculator-row">стоимость авто, $:</div>
+                                                                                <div class="finance-calculator-row">первоначальный взнос, $:</div>
+                                                                                <div class="finance-calculator-row">срок кредитования:</div>
+                                                                            </div>
+                                                                            <div class="finance-calculator-column">
+                                                                                <input type="number" placeholder="9 100 $">
+                                                                                <input type="number" placeholder="5 050 $">
+                                                                                <input type="text" placeholder="12 месяцев">
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="calculator__amoun-inner">
+                                                                 <div class="calculator__amoun-text">
+                                                                    сумма ежемесячного платежа:
+                                                                </div>
+                                                                <span class="calculator__amoun">216 $</span>
+                                                            </div>
+                                                            <form class="form-request">
+                                                                <div class="form-request__left">
+                                                                    <div class="form-request__name form-request__data">Ваше имя</div>
+                                                                    <input type="text" class="input">
+                                                                    <div class="form-request__phone form-request__data">Ваш телефон</div>
+                                                                    <input type="text" class="input">
+                                                                </div> 
+                                                                <div class="form-request__right">
+                                                                    <input type="file" placeholder="загрузить документы" >
+                                                                    <button type="submit">отправить заявку</button>
+                                                                </div>
+                                                              
+                                                            </form>
+                                                            <div class="form-request__consent">
+                                                                * Нажимая на кнопку, вы даете согласие на обработку персональных  
+                                                                данных  и соглашаетесь c политикой конфиденциальности.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="js-tab-content" data-tab="2"></div>
+                                            <div class="js-tab-content" data-tab="3"></div>
+                                        </div>
+                                    </div>
+                               </div> 
+                           </div> 
+                           <img class="logo-finance" src="images/logo-finance.svg" alt="">
+                        </div>
+                        <!-- <div class="reviews">
+                            <div class="reviews__title sup-title">
+                                Комментарии и отзывы
+                            </div>
+                            <div class="reviews__wrapper">
+                                <div class="reviews__content">
+                                    <div class="wrapper">
+                                        <div class="reviews__content-inner">
+                                            <div class="reviews__comment">
+                                                <div class="reviews__comment-title">
+                                                    Оставьте комментарий
+                                                    или задайте вопрос
+                                                </div>
+                                                <div class="reviews__comment-form">
+                                                    <form>
+                                                        <div class="reviews__comment-text">Ваше имя</div>
+                                                        <input type="text">
+                                                        <div class="reviews__comment-text">сообщение:</div>
+                                                        <textarea></textarea>
+                                                        <button type="submit" class="reviews__comment-btn">отправить</button>
+                                                        <button class="captcha">капча</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="reviews__items">
+                                                <div class="reviews__item">
+                                                    <div class="reviews__item-head">
+                                                        <div class="reviews__item-user">
+                                                            <a href="#" class="reviews__item-username">Владимир</a> к <a href="#" class="reviews__item-brand"> Volkswagen Jetta 2014</a> 
+                                                        </div>
+                                                        <div class="reviews__item-icons">
+                                                            <button class="reviews__item-like">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.31 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><rect class="cls-1" y="4.01" width="2.16" height="5.98"/><path class="cls-1" d="M9.49,9.68c-1.52.63-5.24.16-6.33,0v-5c.54-.5,2.59-2.65,2-4.71a1,1,0,0,1,.56.27c.29.29.62,1,.56,2.5l0,.39H9.43a.58.58,0,0,1,.59.48C10.54,7,10.35,9.33,9.49,9.68Z"/></g></g></g></g></svg>
+                                                                <span>2</span>
+                                                            </button>
+                                                            <button class="reviews__item-dislike">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.31 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><rect class="cls-1" x="8.14" width="2.16" height="5.98"/><path class="cls-1" d="M.82.32C2.34-.31,6.06.16,7.15.32v5c-.54.51-2.59,2.66-2,4.72a1,1,0,0,1-.56-.27c-.29-.29-.62-1-.57-2.5l0-.39H.88a.58.58,0,0,1-.59-.48C-.24,3,0,.67.82.32Z"/></g></g></g></g></svg>
+                                                                <span>3</span>
+                                                            </button>
+                                                            <button class="reviews__item-comment">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.87 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><path class="cls-1" d="M12,8.5a4.21,4.21,0,0,0,.85,1.17c0,.07.07.14,0,.2a.14.14,0,0,1-.13.13,3.79,3.79,0,0,1-2-.59A5,5,0,0,1,8.2,10a5.56,5.56,0,0,1-2.55-.59A3.79,3.79,0,0,1,4,7.78a2.92,2.92,0,0,0,.72.06A5.86,5.86,0,0,0,8.46,6.6,3.85,3.85,0,0,0,10,3.53.89.89,0,0,0,10,3.14a4.13,4.13,0,0,1,2.09,1.3,2.91,2.91,0,0,1,.78,2A3,3,0,0,1,12,8.5m-4-7.45A3.07,3.07,0,0,1,9.31,3.53,3.11,3.11,0,0,1,7.94,6.08a5.16,5.16,0,0,1-3.27,1A5.94,5.94,0,0,1,2.19,6.6a4.44,4.44,0,0,1-2,.52H.09C0,7.06,0,7.06,0,7s0-.14,0-.2A3.3,3.3,0,0,0,.88,5.62,2.86,2.86,0,0,1,0,3.53,3.13,3.13,0,0,1,1.34,1.05,5.18,5.18,0,0,1,4.67,0,5.16,5.16,0,0,1,7.94,1.05Z"/></g></g></g></g></svg>
+                                                                <span>0</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="reviews__item-inner">
+                                                        <div class="reviews__item-date">
+                                                            13 января 2020
+                                                        </div>
+                                                        <button class="reviews__item-answer">
+                                                            ответить
+                                                        </button>
+                                                    </div>
+                                                    <div class="reviews__item-text">
+                                                        Наиболее распространенный вариант покупки для Украины — это атмосферные двигатели с механическими КПП или классическим автоматом, которые более надежные в сравнении с фирменным роботом DSG и турбовыми моторами TSI концерна VAG. Но, самое главное, на атмосферники можно поставить газовое оборудование.
+                                                    </div>
+                                                </div>
+                                                <div class="reviews__item answer">
+                                                    <div class="reviews__item-head">
+                                                        <div class="reviews__item-user">
+                                                            <a href="#" class="reviews__item-username">Артур </a> к <a href="#" class="reviews__item-brand"> Volkswagen Jetta 2014</a> 
+                                                        </div>
+                                                        <div class="reviews__item-icons">
+                                                            <button class="reviews__item-like">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.31 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><rect class="cls-1" y="4.01" width="2.16" height="5.98"/><path class="cls-1" d="M9.49,9.68c-1.52.63-5.24.16-6.33,0v-5c.54-.5,2.59-2.65,2-4.71a1,1,0,0,1,.56.27c.29.29.62,1,.56,2.5l0,.39H9.43a.58.58,0,0,1,.59.48C10.54,7,10.35,9.33,9.49,9.68Z"/></g></g></g></g></svg>
+                                                                <span>2</span>
+                                                            </button>
+                                                            <button class="reviews__item-dislike">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.31 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><rect class="cls-1" x="8.14" width="2.16" height="5.98"/><path class="cls-1" d="M.82.32C2.34-.31,6.06.16,7.15.32v5c-.54.51-2.59,2.66-2,4.72a1,1,0,0,1-.56-.27c-.29-.29-.62-1-.57-2.5l0-.39H.88a.58.58,0,0,1-.59-.48C-.24,3,0,.67.82.32Z"/></g></g></g></g></svg>
+                                                                <span>3</span>
+                                                            </button>
+                                                            <button class="reviews__item-comment">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.87 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><path class="cls-1" d="M12,8.5a4.21,4.21,0,0,0,.85,1.17c0,.07.07.14,0,.2a.14.14,0,0,1-.13.13,3.79,3.79,0,0,1-2-.59A5,5,0,0,1,8.2,10a5.56,5.56,0,0,1-2.55-.59A3.79,3.79,0,0,1,4,7.78a2.92,2.92,0,0,0,.72.06A5.86,5.86,0,0,0,8.46,6.6,3.85,3.85,0,0,0,10,3.53.89.89,0,0,0,10,3.14a4.13,4.13,0,0,1,2.09,1.3,2.91,2.91,0,0,1,.78,2A3,3,0,0,1,12,8.5m-4-7.45A3.07,3.07,0,0,1,9.31,3.53,3.11,3.11,0,0,1,7.94,6.08a5.16,5.16,0,0,1-3.27,1A5.94,5.94,0,0,1,2.19,6.6a4.44,4.44,0,0,1-2,.52H.09C0,7.06,0,7.06,0,7s0-.14,0-.2A3.3,3.3,0,0,0,.88,5.62,2.86,2.86,0,0,1,0,3.53,3.13,3.13,0,0,1,1.34,1.05,5.18,5.18,0,0,1,4.67,0,5.16,5.16,0,0,1,7.94,1.05Z"/></g></g></g></g></svg>
+                                                                <span>0</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="reviews__item-inner">
+                                                        <div class="reviews__item-date">
+                                                            20 января 2020
+                                                        </div>
+                                                        <button class="reviews__item-answer">
+                                                            ответить
+                                                        </button>
+                                                    </div>
+                                                    <div class="reviews__item-text">
+                                                        Двигатель с коробкой будут понадежнее.
+                                                        И газ сможете поставить без проблем.
+                                                        В общем, американская Jetta — это сплошные преимущества.
+                                                    </div>
+                                                </div>
+                                                <div class="reviews__item">
+                                                    <div class="reviews__item-head">
+                                                        <div class="reviews__item-user">
+                                                            <a href="#" class="reviews__item-username">Владимир</a> к <a href="#" class="reviews__item-brand"> Volkswagen Jetta 2014</a> 
+                                                        </div>
+                                                        <div class="reviews__item-icons">
+                                                            <button class="reviews__item-like">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.31 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><rect class="cls-1" y="4.01" width="2.16" height="5.98"/><path class="cls-1" d="M9.49,9.68c-1.52.63-5.24.16-6.33,0v-5c.54-.5,2.59-2.65,2-4.71a1,1,0,0,1,.56.27c.29.29.62,1,.56,2.5l0,.39H9.43a.58.58,0,0,1,.59.48C10.54,7,10.35,9.33,9.49,9.68Z"/></g></g></g></g></svg>
+                                                                <span>2</span>
+                                                            </button>
+                                                            <button class="reviews__item-dislike">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.31 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><rect class="cls-1" x="8.14" width="2.16" height="5.98"/><path class="cls-1" d="M.82.32C2.34-.31,6.06.16,7.15.32v5c-.54.51-2.59,2.66-2,4.72a1,1,0,0,1-.56-.27c-.29-.29-.62-1-.57-2.5l0-.39H.88a.58.58,0,0,1-.59-.48C-.24,3,0,.67.82.32Z"/></g></g></g></g></svg>
+                                                                <span>3</span>
+                                                            </button>
+                                                            <button class="reviews__item-comment">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.87 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><path class="cls-1" d="M12,8.5a4.21,4.21,0,0,0,.85,1.17c0,.07.07.14,0,.2a.14.14,0,0,1-.13.13,3.79,3.79,0,0,1-2-.59A5,5,0,0,1,8.2,10a5.56,5.56,0,0,1-2.55-.59A3.79,3.79,0,0,1,4,7.78a2.92,2.92,0,0,0,.72.06A5.86,5.86,0,0,0,8.46,6.6,3.85,3.85,0,0,0,10,3.53.89.89,0,0,0,10,3.14a4.13,4.13,0,0,1,2.09,1.3,2.91,2.91,0,0,1,.78,2A3,3,0,0,1,12,8.5m-4-7.45A3.07,3.07,0,0,1,9.31,3.53,3.11,3.11,0,0,1,7.94,6.08a5.16,5.16,0,0,1-3.27,1A5.94,5.94,0,0,1,2.19,6.6a4.44,4.44,0,0,1-2,.52H.09C0,7.06,0,7.06,0,7s0-.14,0-.2A3.3,3.3,0,0,0,.88,5.62,2.86,2.86,0,0,1,0,3.53,3.13,3.13,0,0,1,1.34,1.05,5.18,5.18,0,0,1,4.67,0,5.16,5.16,0,0,1,7.94,1.05Z"/></g></g></g></g></svg>
+                                                                <span>0</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="reviews__item-inner">
+                                                        <div class="reviews__item-date">
+                                                            13 января 2020
+                                                        </div>
+                                                        <button class="reviews__item-answer">
+                                                            ответить
+                                                        </button>
+                                                    </div>
+                                                    <div class="reviews__item-text">
+                                                        Наиболее распространенный вариант покупки для Украины — это атмосферные двигатели с механическими КПП или классическим автоматом, которые более надежные в сравнении с фирменным роботом DSG и турбовыми моторами TSI концерна VAG. Но, самое главное, на атмосферники можно поставить газовое оборудование.
+                                                    </div>
+                                                </div>
+                                                <div class="reviews__items-more">
+                                                    <div class="reviews__item">
+                                                        <div class="reviews__item-head">
+                                                            <div class="reviews__item-user">
+                                                                <a href="#" class="reviews__item-username">Владимир</a> к <a href="#" class="reviews__item-brand"> Volkswagen Jetta 2014</a> 
+                                                            </div>
+                                                            <div class="reviews__item-icons">
+                                                                <button class="reviews__item-like">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.31 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><rect class="cls-1" y="4.01" width="2.16" height="5.98"/><path class="cls-1" d="M9.49,9.68c-1.52.63-5.24.16-6.33,0v-5c.54-.5,2.59-2.65,2-4.71a1,1,0,0,1,.56.27c.29.29.62,1,.56,2.5l0,.39H9.43a.58.58,0,0,1,.59.48C10.54,7,10.35,9.33,9.49,9.68Z"/></g></g></g></g></svg>
+                                                                    <span>2</span>
+                                                                </button>
+                                                                <button class="reviews__item-dislike">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.31 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><rect class="cls-1" x="8.14" width="2.16" height="5.98"/><path class="cls-1" d="M.82.32C2.34-.31,6.06.16,7.15.32v5c-.54.51-2.59,2.66-2,4.72a1,1,0,0,1-.56-.27c-.29-.29-.62-1-.57-2.5l0-.39H.88a.58.58,0,0,1-.59-.48C-.24,3,0,.67.82.32Z"/></g></g></g></g></svg>
+                                                                    <span>3</span>
+                                                                </button>
+                                                                <button class="reviews__item-comment">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.87 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><path class="cls-1" d="M12,8.5a4.21,4.21,0,0,0,.85,1.17c0,.07.07.14,0,.2a.14.14,0,0,1-.13.13,3.79,3.79,0,0,1-2-.59A5,5,0,0,1,8.2,10a5.56,5.56,0,0,1-2.55-.59A3.79,3.79,0,0,1,4,7.78a2.92,2.92,0,0,0,.72.06A5.86,5.86,0,0,0,8.46,6.6,3.85,3.85,0,0,0,10,3.53.89.89,0,0,0,10,3.14a4.13,4.13,0,0,1,2.09,1.3,2.91,2.91,0,0,1,.78,2A3,3,0,0,1,12,8.5m-4-7.45A3.07,3.07,0,0,1,9.31,3.53,3.11,3.11,0,0,1,7.94,6.08a5.16,5.16,0,0,1-3.27,1A5.94,5.94,0,0,1,2.19,6.6a4.44,4.44,0,0,1-2,.52H.09C0,7.06,0,7.06,0,7s0-.14,0-.2A3.3,3.3,0,0,0,.88,5.62,2.86,2.86,0,0,1,0,3.53,3.13,3.13,0,0,1,1.34,1.05,5.18,5.18,0,0,1,4.67,0,5.16,5.16,0,0,1,7.94,1.05Z"/></g></g></g></g></svg>
+                                                                    <span>0</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="reviews__item-inner">
+                                                            <div class="reviews__item-date">
+                                                                13 января 2020
+                                                            </div>
+                                                            <button class="reviews__item-answer">
+                                                                ответить
+                                                            </button>
+                                                        </div>
+                                                        <div class="reviews__item-text">
+                                                            Наиболее распространенный вариант покупки для Украины — это атмосферные двигатели с механическими КПП или классическим автоматом, которые более надежные в сравнении с фирменным роботом DSG и турбовыми моторами TSI концерна VAG. Но, самое главное, на атмосферники можно поставить газовое оборудование.
+                                                        </div>
+                                                    </div>
+                                                    <div class="reviews__item">
+                                                        <div class="reviews__item-head">
+                                                            <div class="reviews__item-user">
+                                                                <a href="#" class="reviews__item-username">Владимир</a> к <a href="#" class="reviews__item-brand"> Volkswagen Jetta 2014</a> 
+                                                            </div>
+                                                            <div class="reviews__item-icons">
+                                                                <button class="reviews__item-like">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.31 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><rect class="cls-1" y="4.01" width="2.16" height="5.98"/><path class="cls-1" d="M9.49,9.68c-1.52.63-5.24.16-6.33,0v-5c.54-.5,2.59-2.65,2-4.71a1,1,0,0,1,.56.27c.29.29.62,1,.56,2.5l0,.39H9.43a.58.58,0,0,1,.59.48C10.54,7,10.35,9.33,9.49,9.68Z"/></g></g></g></g></svg>
+                                                                    <span>2</span>
+                                                                </button>
+                                                                <button class="reviews__item-dislike">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.31 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><rect class="cls-1" x="8.14" width="2.16" height="5.98"/><path class="cls-1" d="M.82.32C2.34-.31,6.06.16,7.15.32v5c-.54.51-2.59,2.66-2,4.72a1,1,0,0,1-.56-.27c-.29-.29-.62-1-.57-2.5l0-.39H.88a.58.58,0,0,1-.59-.48C-.24,3,0,.67.82.32Z"/></g></g></g></g></svg>
+                                                                    <span>3</span>
+                                                                </button>
+                                                                <button class="reviews__item-comment">
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.87 10"><defs><style>.cls-1{fill:#8c8c91;}</style></defs><g id="Слой_2" data-name="Слой 2"><g id="контент"><g id="_03_КОММЕНТАРИИ_И_ОТЗЫВЫ" data-name="03_КОММЕНТАРИИ И ОТЗЫВЫ"><g id="отзывы"><path class="cls-1" d="M12,8.5a4.21,4.21,0,0,0,.85,1.17c0,.07.07.14,0,.2a.14.14,0,0,1-.13.13,3.79,3.79,0,0,1-2-.59A5,5,0,0,1,8.2,10a5.56,5.56,0,0,1-2.55-.59A3.79,3.79,0,0,1,4,7.78a2.92,2.92,0,0,0,.72.06A5.86,5.86,0,0,0,8.46,6.6,3.85,3.85,0,0,0,10,3.53.89.89,0,0,0,10,3.14a4.13,4.13,0,0,1,2.09,1.3,2.91,2.91,0,0,1,.78,2A3,3,0,0,1,12,8.5m-4-7.45A3.07,3.07,0,0,1,9.31,3.53,3.11,3.11,0,0,1,7.94,6.08a5.16,5.16,0,0,1-3.27,1A5.94,5.94,0,0,1,2.19,6.6a4.44,4.44,0,0,1-2,.52H.09C0,7.06,0,7.06,0,7s0-.14,0-.2A3.3,3.3,0,0,0,.88,5.62,2.86,2.86,0,0,1,0,3.53,3.13,3.13,0,0,1,1.34,1.05,5.18,5.18,0,0,1,4.67,0,5.16,5.16,0,0,1,7.94,1.05Z"/></g></g></g></g></svg>
+                                                                    <span>0</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                        <div class="reviews__item-inner">
+                                                            <div class="reviews__item-date">
+                                                                13 января 2020
+                                                            </div>
+                                                            <button class="reviews__item-answer">
+                                                                ответить
+                                                            </button>
+                                                        </div>
+                                                        <div class="reviews__item-text">
+                                                            Наиболее распространенный вариант покупки для Украины — это атмосферные двигатели с механическими КПП или классическим автоматом, которые более надежные в сравнении с фирменным роботом DSG и турбовыми моторами TSI концерна VAG. Но, самое главное, на атмосферники можно поставить газовое оборудование.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="reviews__item-more">
+                                                    Показать еще комментарии (2)  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <img class="logo-characteristic" src="images/logo-characteristic.svg" alt="">
+                            </div>
+                        </div>
+                        <div class="similar">
+                            <div class="wrapper">
+                                <div class="similar__head">
+                                    <div class="similar__head-title sup-title">
+                                        похожие авто
+                                    </div>
+                                    <div class="similar__head-text">
+                                        Скажите какое авто Вы хотите и мы 
+                                        бесплатно подберем для Вас 10 вариантов
+                                    </div>
+                                    <a href="#" class="similar__head-link">
+                                        заказать подбор
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="similar__items">
+                                <div class="main__item">
+                                    <div class="main__item-slider">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                    </div>
+                                    <div class="main__item-box">
+                                        <div class="main__item-information">
+                                            <a href="#" class="main__item-name">
+                                                Volkswagen Jetta 2014
+                                            </a>
+                                            <div class="main__item-status">
+                                                57 тыс. км | В наличии
+                                            </div>
+                                        </div>
+                                        <div class="main__item-price">
+                                            9 000 $
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item">
+                                     <div class="main__item-slider">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                    </div>
+                                    <div class="main__item-box">
+                                        <div class="main__item-information">
+                                            <a href="#" class="main__item-name">
+                                                Volkswagen Jetta 2014
+                                            </a>
+                                            <div class="main__item-status">
+                                                57 тыс. км | В наличии
+                                            </div>
+                                        </div>
+                                        <div class="main__item-price">
+                                            9 000 $
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item">
+                                     <div class="main__item-slider">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                    </div>
+                                    <div class="main__item-box">
+                                        <div class="main__item-information">
+                                            <a href="#" class="main__item-name">
+                                                Volkswagen Jetta 2014
+                                            </a>
+                                            <div class="main__item-status">
+                                                57 тыс. км | В наличии
+                                            </div>
+                                        </div>
+                                        <div class="main__item-price">
+                                            9 000 $
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item">
+                                     <div class="main__item-slider">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                    </div>
+                                    <div class="main__item-box">
+                                        <div class="main__item-information">
+                                            <a href="#" class="main__item-name">
+                                                Volkswagen Jetta 2014
+                                            </a>
+                                            <div class="main__item-status">
+                                                57 тыс. км | В наличии
+                                            </div>
+                                        </div>
+                                        <div class="main__item-price">
+                                            9 000 $
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item">
+                                     <div class="main__item-slider">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                        <img src="images//mazda-cx-5.jpg" alt="">
+                                    </div>
+                                    <div class="main__item-box">
+                                        <div class="main__item-information">
+                                            <a href="#" class="main__item-name">
+                                                Volkswagen Jetta 2014
+                                            </a>
+                                            <div class="main__item-status">
+                                                57 тыс. км | В наличии
+                                            </div>
+                                        </div>
+                                        <div class="main__item-price">
+                                            9 000 $
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="main__item  main__item-link">
+                                    <img src="images/cars.jpg" alt="">
+                                    <div class="main__item-inner">
+                                        <a href="#" class="main__item-inner__link">Смотреть все</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+   
+
+   
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="libs/simplebar/simplebar.min.js"></script>
+    <script src="libs/slick-carusel/slick.min.js"></script>
+    <script src="libs/rateyo/jquery.rateyo.min.js"></script>
+    <script src="libs/jq-form-styler/jquery.formstyler.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

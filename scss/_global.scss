@@ -1,0 +1,101 @@
+
+html {
+    box-sizing: border-box;
+    // width: 100%;
+    // max-width: 100%;
+    // overflow-x: hidden;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html,
+body {
+    height: 100%;
+}
+body{
+    // position: relative;
+    // width: 100%;
+    // max-width: 100%;
+    // overflow-x: hidden;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    // font-size: 16px;
+    // line-height: 18px;
+    font-size: 0.8vw;
+    line-height: 0.9vw;
+    @extend %geometria;
+    background-color: #28282D;
+    color: #fff;
+}
+a{
+    display: inline-block;
+    text-decoration: none;
+    outline: none;
+}
+ul,
+li{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+button{
+    outline: none;
+    cursor: pointer;
+    padding: 0;
+}
+input{
+    outline: none;
+}
+
+.sup-title{
+    //padding-top: 40px;
+    padding-top: 2.1vw;
+    text-transform: uppercase;
+    @extend %geometria-800;
+    // font-size: 24px;
+    font-size: 1.3vw;
+    letter-spacing: 2px;
+    color: #1E1E23;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        // width: 40px;
+        width: 2.1vw;
+        height: 2px;
+        background-color: #F9BF26;
+        top: 0;
+        left: 0;
+    }
+}
+.title{
+    color: #1E1E23;
+    //font-size: 24px;
+    font-size: 1.3vw;
+    // line-height: 28px;
+    line-height: 1.4vw;
+    @extend %geometria-800;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    //padding-left: 78px;
+    padding-left: 4.1vw;
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        // width: 40px;
+        width: 2.1vw;
+        height: 2px;
+        background-color: #F9BF26;
+        left: 0;
+        top: 0.5vw;
+    }
+}

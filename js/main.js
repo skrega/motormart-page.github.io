@@ -156,14 +156,12 @@ $(function () {
     $('.btn-view').on('click', function () {
       $(this).toggleClass('active');
     });
-
-
+    
     $('.advanced-hide').on('click', function () {
       $('.advanced-row').removeClass('show');
       $('.advanced-hide').removeClass('show');
       $('.advanced-search').removeClass('rotate');
     });
-
 
     $('.navigation__menu-button').on('click', function () {
       $('.navigation__menu-button').toggleClass('active');
@@ -186,9 +184,7 @@ $(function () {
     $('.reviews__items-more').toggleClass('show');
   });
 
-  // $('.product-menu__link').on('click', function () {
-  //   $(this).addClass('active');
-  // });
+  $('input[type=checkbox], select, input[type=file]').styler({});
 
   $(function() {
     $(".product-menu li a").on('click', function () {
@@ -197,50 +193,9 @@ $(function () {
     })
   });
   
-
-
-  $(function() {
-
-    $('input[type=checkbox], select, input[type=file]').styler({});
   
-  });
-
-
-
-  // $('.main__item-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
-  //   console.log(currentSlide); // индекс текущего слайда
-  // });
-
   
 
-  // $('.main__items-inner').scroll(function(){
-  //   var docscroll=$('.main__items-inner').scrollTop();
-  //   if(docscroll>$('.main__items-inner').height()){
-  //     $('.main__items').css({'height': $('.main__items').height(),'width': $('.main__items').width()}).addClass('fixed');
-  //   }else{
-  //     $('.main__items').removeClass('fixed');
-  //   }
-  // });
-  // $('.main__items-inner').scroll(function(){
-  //   if($(this).scrollTop()>140){
-  //       $('.main__items').addClass('fixed');
-  //   }
-  //   else if ($(this).scrollTop()<140){
-  //       $('.main__items').removeClass('fixed');
-  //   }
-  // });
 
-  // const simpleBar = new SimpleBar(document.getElementById('product__main'));
-  // simpleBar.getScrollElement().addEventListener('scroll', function(){
-  
-  // });
 
-  // window.onscroll = function() {
-  //   var scrolled = window.pageYOffset || document.documentElement.scrollTop;
-  //   if(scrolled >= 80)
-  //     document.querySelector(".block-1").style.display = 'none';
-  //     document.querySelector(".block-2").style.display = 'none';
-  //     document.querySelector(".block-3").style.width = '100px';
-  // }
-     
 });

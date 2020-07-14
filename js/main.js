@@ -80,6 +80,7 @@ $(function () {
       slidesToScroll: 1,
       dots: false,
       arrows: false,
+      infinite: false,
       variableWidth: true,
       responsive: [
         {
@@ -98,7 +99,10 @@ $(function () {
       slidesToScroll: 1,
       dots: true,
       arrows: false,
-      variableWidth: true
+      variableWidth: true,
+      // autoplay: true,
+      // speed: 200
+      //fade: true
     });
     $('.advatages-slider-adaptive').slick({
       slidesToShow: 1,
@@ -107,48 +111,65 @@ $(function () {
       arrows: false,
       variableWidth: true
     });
-
+    $('.navigation__links-inner').slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      dots: false,
+      arrows: false,
+      autoplay: true,
+      speed: 100,
+      fade: true,
+    });
+    $('.navigation__user').on('click', function () {
+      $('.user__menu').toggleClass('show');
+      $('.menu-background, navigation__user').toggleClass('show');
+      $('.user-btn').toggleClass('activ');
+    });
 
     $('.navigation__menu-search').on('click', function () {
       $('.main__search-form').toggleClass('show');
-      // $('.main__items-link').toggleClass('rotate');
     });
    
-    $('.main__items-link').on('click', function () {
+    $('.main__head').on('click', function () {
       $('.advatages-slider').toggleClass('show');
-      $('.main__items-link').toggleClass('rotate');
     });
-    $('.main__items-link').on('click', function () {
+    $('.main__head').on('click', function () {
       $('.advatages-slider-adaptive').toggleClass('visible');
-      $('.main__head').toggleClass('hide');
       $('.main__items-link').toggleClass('rotate');
-    });
-    $('.main__items-link').on('click', function () {
-      $('.main__items-link').toggleClass('rotate');
-    });
-    
+    });  
     $('.advanced-search').on('click', function () {
-      $('.advanced-row').toggleClass('show');
-      $('.advanced-search').toggleClass('rotate');
+      $('.advanced-row').addClass('show');
+      $('.main__form-advanced').addClass('show');
+      $('.advanced-search').addClass('rotate');
+      $('.advanced-hide').addClass('show');
+      $('.advanced-hide').addClass('rotate');
     });
-
+    $('.advanced-search__hide').on('click', function () {
+      $('.advanced-row').removeClass('show');
+      $('.main__form-advanced').removeClass('show');
+      $('.advanced-search').Class('rotate');
+    });
     $('.btn-favorites').on('click', function () {
-      $('.btn-favorites').toggleClass('active');
+      $(this).toggleClass('active');
     });
 
-    $('.btn-comparison').on('click', function () {
-      $('.btn-comparison').toggleClass('active');
+    $('.btn-view').on('click', function () {
+      $(this).toggleClass('active');
+    });
+
+
+    $('.advanced-hide').on('click', function () {
+      $('.advanced-row').removeClass('show');
+      $('.advanced-hide').removeClass('show');
+      $('.advanced-search').removeClass('rotate');
     });
 
 
     $('.navigation__menu-button').on('click', function () {
       $('.navigation__menu-button').toggleClass('active');
       $('.main__search-form').toggleClass('active');
-    });
-
-
-    $('.nav-card').on('click', function () {
-      $(this).toggleClass('show');
+      $('.navigation__menu__wrapper').toggleClass('active');
+      $('.main__items').toggleClass('hide');
     });
 
   $('.reviews__item-like').on('click', function(){
@@ -165,10 +186,61 @@ $(function () {
     $('.reviews__items-more').toggleClass('show');
   });
 
+  // $('.product-menu__link').on('click', function () {
+  //   $(this).addClass('active');
+  // });
+
+  $(function() {
+    $(".product-menu li a").on('click', function () {
+      $(".product-menu li a").removeClass('active');
+      $(this).addClass('active');
+    })
+  });
+  
+
+
   $(function() {
 
     $('input[type=checkbox], select, input[type=file]').styler({});
   
   });
-   
-  });
+
+
+
+  // $('.main__item-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+  //   console.log(currentSlide); // индекс текущего слайда
+  // });
+
+  
+
+  // $('.main__items-inner').scroll(function(){
+  //   var docscroll=$('.main__items-inner').scrollTop();
+  //   if(docscroll>$('.main__items-inner').height()){
+  //     $('.main__items').css({'height': $('.main__items').height(),'width': $('.main__items').width()}).addClass('fixed');
+  //   }else{
+  //     $('.main__items').removeClass('fixed');
+  //   }
+  // });
+  // $('.main__items-inner').scroll(function(){
+  //   if($(this).scrollTop()>140){
+  //       $('.main__items').addClass('fixed');
+  //   }
+  //   else if ($(this).scrollTop()<140){
+  //       $('.main__items').removeClass('fixed');
+  //   }
+  // });
+
+  // const simpleBar = new SimpleBar(document.getElementById('product__main'));
+  // simpleBar.getScrollElement().addEventListener('scroll', function(){
+  
+  // });
+
+  // window.onscroll = function() {
+  //   var scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  //   if(scrolled >= 80)
+  //     document.querySelector(".block-1").style.display = 'none';
+  //     document.querySelector(".block-2").style.display = 'none';
+  //     document.querySelector(".block-3").style.width = '100px';
+  // }
+     
+});

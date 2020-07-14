@@ -156,7 +156,7 @@ $(function () {
     $('.btn-view').on('click', function () {
       $(this).toggleClass('active');
     });
-    
+
     $('.advanced-hide').on('click', function () {
       $('.advanced-row').removeClass('show');
       $('.advanced-hide').removeClass('show');
@@ -180,9 +180,29 @@ $(function () {
     $('.reviews__item-like').removeClass('active');
   });
   $('.reviews__item-more').on('click', function () {
-    $('.reviews__item-more').toggleClass('inactive');
-    $('.reviews__items-more').toggleClass('show');
+    $('.reviews__item-more').addClass('disactive');
+    $('.reviews__items-more').addClass('show');
+    $('.reviews__item-hide').addClass('active');
   });
+  $('.reviews__item-hide').on('click', function () {
+    $('.reviews__item-more').removeClass('disactive');
+    $('.reviews__items-more').removeClass('show');
+    $('.reviews__item-hide').removeClass('active');
+  });
+
+  $('.product__characteristic-btn').on('click', function () {
+    $('.product__characteristic-add').toggleClass('hide');
+    $('.product__characteristic--active').toggleClass('active');
+  });
+  
+
+  $('.product__characteristic-comparison').on('click', function () {
+    $('.product__characteristic-comparison--hide').toggleClass('hide');
+    $('.product__characteristic-comparison--active').toggleClass('active');
+    $('.product__characteristic-comparison').toggleClass('active');
+  });
+
+
 
   $('input[type=checkbox], select, input[type=file]').styler({});
 

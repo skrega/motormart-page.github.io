@@ -132,10 +132,18 @@ $(function () {
    
     $('.main__head').on('click', function () {
       $('.advatages-slider').toggleClass('show');
+      //$('#main-advatages__item').toggleClass('visible');
+      $('#main-advatages__item').show(1000, function(){
+        setTimeout(function(){
+          $('#main-advatages__item').style.display= "flex".hide(500);
+        }, 5000);
+       // $('#main-advatages__item').style.display= "flex";
+      });
     });
     $('.main__head').on('click', function () {
-      $('.advatages-slider-adaptive').toggleClass('visible');
-      $('.main__items-link').toggleClass('rotate');
+      // $('.advatages-slider-adaptive').toggleClass('visible');
+      // $('.main__items-link').toggleClass('rotate');
+     
     });  
     $('.advanced-search').on('click', function () {
       $('.advanced-row').addClass('show');
@@ -213,8 +221,7 @@ $(function () {
     })
   });
   
-  
-  
+
 
 
 
